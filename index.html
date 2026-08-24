@@ -1,38 +1,39 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio | Muhammad Hafidz</title>
+  <title>Portfolio | Muhammad Hafidz</title>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
-  <!-- CSS EKSTERNAL -->
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
-  
-<style>
-  
-</style>
-
 </head>
 
 <body>
+  <!-- ===== NAVBAR ===== -->
   <nav>
     <h2 class="logo">Porto<span>folio</span></h2>
-    <ul>
+    <ul id="navLinks">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- ===== HERO ===== -->
   <section id="home" class="hero">
     <div class="hero-text">
       <h3>Hello, I'm</h3>
@@ -44,8 +45,12 @@
         Selalu antusias mempelajari teknologi baru untuk menciptakan solusi digital yang inovatif dan bermanfaat.
       </p>
       <div class="btn-group">
-        <a href="my_cv.pdf" class="btn" download> Download CV </a>
-        <a href="#projects" class="btn btn-outline"> My Project </a>
+        <a href="my_cv.pdf" class="btn btn-primary" download>
+          <i class="fas fa-download"></i> Download CV
+        </a>
+        <a href="#projects" class="btn btn-outline">
+          <i class="fas fa-code"></i> My Projects
+        </a>
       </div>
     </div>
 
@@ -54,15 +59,18 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ===== ABOUT ===== -->
   <section id="about">
     <h2 class="title">About Me</h2>
     <p>
-      Saya merupakan pemuda berusia 18 tahun yang memiliki minat di bidang pengembangan website dan teknologi informasi. Saya mampu membangun website modern dan responsif menggunakan HTML, CSS, JavaScript, PHP, Python, serta MySQL. Saya juga terus mengembangkan kemampuan dalam pembuatan aplikasi web dan mempelajari teknologi terbaru untuk menciptakan solusi digital yang bermanfaat.
+      Saya merupakan pemuda berusia 18 tahun yang memiliki minat di bidang pengembangan website dan teknologi informasi.
+      Saya mampu membangun website modern dan responsif menggunakan HTML, CSS, JavaScript, PHP, Python, serta MySQL.
+      Saya juga terus mengembangkan kemampuan dalam pembuatan aplikasi web dan mempelajari teknologi terbaru
+      untuk menciptakan solusi digital yang bermanfaat.
     </p>
   </section>
 
-  <!-- SKILLS -->
+  <!-- ===== SKILLS ===== -->
   <section id="skills">
     <h2 class="title">My Skills</h2>
     <div class="cards">
@@ -89,38 +97,119 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- ===== PROJECTS ===== -->
   <section id="projects">
     <h2 class="title">Latest Projects</h2>
     <div class="cards">
       <div class="card">
-        <img src="web.png">        
+        <img src="web.png" alt="Project 1" />
         <h3>Sistem Website Dinamis</h3>
-        <p>Website berbasis framework laravel</p>
+        <p>Website berbasis framework Laravel dengan fitur authentication dan dashboard admin.</p>
       </div>
       <div class="card">
-        <img src="squidgame.png">
-        <h3>CRUD Anggota Squidgame</h3>   
-        <p>HTML CSS JS DAN PHP</p>
+        <img src="squidgame.png" alt="Project 2" />
+        <h3>CRUD Anggota Squidgame</h3>
+        <p>Aplikasi CRUD sederhana menggunakan HTML, CSS, JS, dan PHP dengan database MySQL.</p>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-    <section id="contact">
-      <h2 class="title">Contact Me</h2>
-      <div class="contact">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message" ></textarea>
-          <button>Send</button>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="contact-container">
+      <!-- ===== LEFT SIDE ===== -->
+      <div class="contact-left">
+        <h1 class="title">Contact Me</h1>
+        <p class="subtitle">
+          Punya pertanyaan, saran, atau peluang kolaborasi? Jangan ragu untuk menghubungi saya melalui kontak di bawah ini. Terima kasih.
+        </p>
+
+        <!-- Contact Info Cards -->
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:pahmadzikri@gmail.com">110309hafidz@gmail.com</a></div>
+          </div>
+          <div class="info-card">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div class="label">Phone</div>
+            <div class="value"><a href="tel:+6285697806511">+62 857-8054-6820</a></div>
+          </div>
+          <div class="info-card">
+            <div class="icon"><i class="fab fa-github"></i></div>
+            <div class="label">GitHub</div>
+            <div class="value"><a href="https://github.com/zyaplee-zei" target="_blank">https://github.com/110309hafidz-oss</a></div>
+          </div>
+          <div class="info-card">
+            <div class="icon"><i class="fas fa-user"></i></div>
+            <div class="label">Name</div>
+            <div class="value">Muhammad Hafidz</div>
+          </div>
+        </div>
+
+        <!-- Feedback Section -->
+        <div class="feedback-section">
+          <h4><i class="fas fa-comment-dots" style="color:#6c63ff;margin-right:8px;"></i>Feedback</h4>
+          <p>Saran dan masukan Anda sangat berharga untuk pengembangan saya.</p>
+        </div>
       </div>
-    </section>
 
+      <!-- ===== RIGHT SIDE - FORM ===== -->
+      <div class="contact-right">
+        <h2 class="form-title">Kirim <span>Pesan</span></h2>
 
+        <div class="form-group">
+          <label>Nama Lengkap <span class="required">*</span></label>
+          <input type="text" id="fullName" placeholder="Masukkan nama lengkap Anda" />
+        </div>
+
+        <div class="form-group">
+          <label>Email Anda <span class="required">*</span></label>
+          <input type="email" id="emailAddress" placeholder="Masukkan alamat email Anda" />
+        </div>
+
+        <div class="form-group">
+          <label>Komentar atau Saran <span class="required">*</span></label>
+          <textarea id="messageContent" placeholder="Tuliskan komentar atau saran Anda di sini..."></textarea>
+        </div>
+
+        <div class="btn-group-actions">
+          <button class="btn btn-primary" id="sendMessageBtn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <button class="btn btn-outline" id="viewCommentsBtn">
+            <i class="fas fa-comments"></i> Lihat Komentar (<span id="commentCount">0</span>)
+          </button>
+        </div>
+
+        <!-- Comments List -->
+        <div class="comments-section">
+          <div class="comments-list" id="commentsList">
+            <!-- Comments will be rendered here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer>© 2026 Muhammad Hafidz | Portfolio Website</footer>
 
-  <!-- ===== JS EKSTERNAL ===== -->
+  <!-- ===== NOTIFICATION ===== -->
+  <div class="notification" id="notification">
+    <i class="fas fa-check-circle"></i> <span id="notifMessage">Message sent successfully!</span>
+  </div>
+
   <script src="main.js"></script>
+  
+  <script>
+    console.log('✅ index.html loaded successfully');
+    
+    if (typeof window.scriptLoaded === 'undefined') {
+      console.warn('⚠️ main.js mungkin tidak terload dengan benar');
+      console.log('Pastikan file script.js berada di folder yang sama dengan index.html');
+    }
+  </script>
 </body>
 </html>
